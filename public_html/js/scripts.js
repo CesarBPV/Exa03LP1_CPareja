@@ -48,13 +48,22 @@ $(document).ready(function () {
         $(".EventsContent").show();
     });
     $("#animacion1").click(function () {
-        $("#book").animate({
-            opacity: 0.25,
-            left: "+=50",
+        $("#animacion1").animate({
+            opacity: 0.8,
             height: "toggle"
-        }, 5000, function () {
-            // Animation complete.
+        }, 2000, function () {
+            $("#animacion1").show()
         });
+    });
+    $("#animacion2").click(function () {
+        $("#animacion2").animate({
+            top:"200px"
+        });
+    });
+    $("#animacion3").click(function () {
+        $("#animacion3").animate({width:"200px" },"slow");
+        $("#animacion3").animate({right:"200px" },"slow");
+        $("#animacion3").animate({bottom:"200px" },"slow");
     });
 //    $(".inicio").hover(function(){
 //       $(".inicio a").css("color","green"); 
