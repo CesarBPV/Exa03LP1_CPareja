@@ -12,8 +12,10 @@ and open the template in the editor.
     padding:0px;
 }
 body{
+    
     position:relative;
-    height: 100%;
+    margin-top: 70px;
+    height: calc(100%-70px);
 }
 .login{
     margin-top: 20px;
@@ -33,12 +35,14 @@ h1{
     text-align: center;
 }
 .menu{
+    height: 70px;
     position: fixed;
     top:0px;
     padding:10px;
     background: #003399;
     width:100%;
     margin-left: -10px;
+    z-index: 1000;
 }
 .menu ul{
     list-style: none;
@@ -52,6 +56,7 @@ ul li a{
     text-decoration: none;
     color:white;
     font-weight: bold;
+    cursor:pointer;
 }
 ul li a:hover{
     text-decoration: none;
@@ -70,11 +75,11 @@ footer{
 }
 .contents{
     width:90%;
-    padding:10px;
-    height: 100vh;
+    height: 70vh;
 }
 img{
     width:100%;
+    height: 100%;
 }
 .container{
     margin:0px auto;
@@ -86,6 +91,6 @@ img{
 }
 button{
     position:relative;
-    margin-top: 30%;
+    top: 50%;
     margin-right: 30px;
 }
