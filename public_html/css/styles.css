@@ -11,8 +11,12 @@ and open the template in the editor.
     margin :0 auto;
     padding:0px;
 }
-body{
-    
+
+#loginBody{
+    position:relative;
+    height: 100%;
+}
+#indexBody{
     position:relative;
     margin-top: 70px;
     height: calc(100%-70px);
@@ -34,7 +38,48 @@ header{
 h1{
     text-align: center;
 }
+.menuBar ul{
+    padding:10px;
+    background: #424040;
+    opacity:0.9;
+    width:220px;
+    display:none;
+}
+.menuBar ul li{
+    text-align: center;
+    padding:10px;
+    display:block;
+    width:200px;
+    cursor:pointer;
+}
+.menuBar ul li a{
+    font-size: 24px;
+    font-weight: bold;
+}
+.menuBar{
+    position: fixed;
+    top:0px;
+    width:100%;
+    z-index: 1000;
+    display:none;
+}
+.menuBar div{
+    height: 50px;
+    padding:10px;
+    background: #003399;
+}
+.menuBar div a{
+    cursor:pointer;
+}
+span{
+    font-size: 24px;
+    color:white;
+}
+.menuBar ul li:hover{
+    color:yellow
+}
 .menu{
+    display:block;
     height: 70px;
     position: fixed;
     top:0px;
@@ -47,18 +92,18 @@ h1{
 .menu ul{
     list-style: none;
 }
-ul li{
+.menu ul li{
     display:inline-block;
     padding:20px;
     text-align: center;
 }
-ul li a{
+.menu ul li a,.menuBar ul li a{
     text-decoration: none;
     color:white;
     font-weight: bold;
     cursor:pointer;
 }
-ul li a:hover{
+.menu ul li a:hover,.menuBar ul li a:hover{
     text-decoration: none;
     color:#f0e641
 }
@@ -77,20 +122,69 @@ footer{
     width:90%;
     height: 70vh;
 }
-img{
-    width:100%;
-    height: 100%;
-}
 .container{
-    margin:0px auto;
-    padding:0px
-        
+    margin:10px auto;
 }
 #incorrect{
     margin:10px;
 }
-button{
+.animacion{
+    padding:10px;
     position:relative;
     top: 50%;
-    margin-right: 30px;
+}
+.animacion button{
+    width:100%;
+}
+#panel{
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    padding: 50px;
+    display: none;
+}
+
+#sliderContainer{
+    position:relative;
+    width:100%;
+    height: 100%;
+}
+div img{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+#slider{
+    width:100%;
+}
+.slide{
+    position:absolute;
+    opacity: 0;
+    transition: 2s;
+    width:100%;
+    height: 100%;
+}
+.slideCurrent{
+    opacity: 1;
+    transition: 2s;
+}
+@media screen and (max-width: 800px) {
+    .menu {
+        display:none;
+    }
+    .menuBar{
+        display:block;
+    }
+    #indexBody{
+        position:relative;
+        margin-top: 50px;
+        height: calc(100%-50px);
+    }
+    .menuBar ul{
+        width:100%;
+    }
+    .menuBar ul li{
+        width:100%;
+    }
 }

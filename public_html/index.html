@@ -14,7 +14,18 @@ and open the template in the editor.
         <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
         <script src="js/scripts.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body id="indexBody">
+        <nav class="menuBar">
+            <div><a><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a></div>
+            <ul>
+                <li class="inicio"><a>INICIO</a></li>
+                <li class="css"><a>CSS</a></li>
+                <li class="events"><a>EVENTOS</a></li>
+                <li class="html"><a>HTML</a></li>
+                <li class="ajax"><a>AJAX</a></li>
+                <li class="forms"><a>FORMS</a></li>
+            </ul>
+        </nav>
         <header>
             <nav class="menu">
                 <ul>
@@ -29,28 +40,76 @@ and open the template in the editor.
         </header>
         <div class="container">
             <div class="InicioContent contents">
-                <img src="pictures/acsscreencombat-kukriwm201505121830cetjpg-7667fe_7zgs.jpg" alt=""/>
+                <div id="sliderContainer">
+                    <div id="slider">
+                        <div id="img1" class="slide slideCurrent">
+                            <img src="pictures/acsscreencombat-kukriwm201505121830cetjpg-7667fe_7zgs.jpg" alt=""/>
+                        </div>
+                        <div id="img2" class="slide">
+                            <img src="pictures/430889.jpg" alt=""/>
+                        </div>
+                        <div id="img3" class="slide">
+                            <img src="pictures/665093.jpg" alt=""/>
+                        </div>
+                        <div id="img4" class="slide">
+                            <img src="pictures/7DFB25374.jpg" alt=""/>
+                        </div>
+                        <div id="img5" class="slide">
+                            <img src="pictures/giFnui8.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="CSSContent contents col-md-12">
-                <button id="animacion1" class="btn btn-success">Click Aqui!</button>
-                <button id="animacion2" class="btn btn-success">Click Aqui!</button>
-                <button id="animacion3" class="btn btn-success">Click Aqui!</button>
+            <div class="CSSContent contents">
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-success" id="animacion1">Click Aqui!</button>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-success" id="animacion2">Click Aqui!</button>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-success" id="animacion3">Click Aqui!</button>
+                </div>
             </div>
-            <div class="EventsContent contents col-md-12">
-                <button class="btn btn-danger col-lg-4 col-sm-12">Click Aqui!</button>
-                <button class="btn btn-danger col-lg-4 col-sm-12">Click Aqui!</button>
-                <button class="btn btn-danger col-lg-4 col-sm-12">Click Aqui!</button>
+            <div class="EventsContent contents">
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-danger" id="animacion4">Click Aqui!</button>
+                    <p class="p1 col-md-12">bla bla bla bla bla bla bla bla</p>
+                    <p class="p1 col-md-12">bla bla bla bla bla bla bla bla</p>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-danger" id="animacion5">Click Aqui!</button>
+                    <div id="div1" class="col-md-12" style="width:80px;height:80px;display:none;background-color:red;"></div>
+                    <div id="div2" class="col-md-12" style="width:80px;height:80px;display:none;background-color:green;"></div>
+                    <div id="div3" class="col-md-12" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-danger" id="animacion6">Click Aqui!</button>
+                    <div id="panel">Quiero aprobar!</div>
+                </div>
             </div>
-            <div class="HtmlContent contents col-md-12">
-                <button class="btn btn-warning col-lg-4 col-sm-12">Click Aqui!</button>
-                <button class="btn btn-warning col-lg-4 col-sm-12">Click Aqui!</button>
-                <button class="btn btn-warning col-lg-4 col-sm-12">Click Aqui!</button>
+            <div class="HtmlContent contents">
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-warning" id="animacion7">Click Aqui!</button>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-warning" id="animacion8">Click Aqui!</button>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-warning" id="animacion9">Click Aqui!</button>
+                </div>
             </div>
-            <div class="AjaxContent contents col-md-12">
-                <button class="btn btn-toolbar col-lg-4 col-sm-12">Click Aqui!</button>
-                <button class="btn btn-toolbar col-lg-4 col-sm-12">Click Aqui!</button>
-                <button class="btn btn-toolbar col-lg-4 col-sm-12">Click Aqui!</button>
+            <div class="AjaxContent contents">
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-toolbar" id="animacion10">Click Aqui!</button>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-toolbar" id="animacion11">Click Aqui!</button>
+                </div>
+                <div class=" col-lg-4 col-sm-12 col-xs-12 animacion">
+                    <button class="btn btn-toolbar" id="animacion12">Click Aqui!</button>
+                </div>
             </div>
             <div class="FormsContent contents">
                 <div>
